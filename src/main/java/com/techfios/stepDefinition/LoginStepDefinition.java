@@ -9,6 +9,7 @@ import com.techfios.utils.BrowserFactory;
 
 import org.openqa.selenium.WebDriver;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -101,6 +102,12 @@ public class LoginStepDefinition extends BrowserFactory {
         // Write code here that turns the phrase above into concrete actions
         bankPage.confirmAccountCreation();
 
+    }
+
+    @After
+    public void afterMethod(){
+        driver.close();
+        driver.quit();
     }
 
 }
