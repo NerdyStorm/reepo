@@ -1,7 +1,5 @@
 package com.techfios.stepDefinition;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.Random;
 
 import com.techfios.pages.BankPage;
@@ -9,14 +7,14 @@ import com.techfios.pages.DashboardPage;
 import com.techfios.pages.LoginPage;
 import com.techfios.utils.BrowserFactory;
 
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-import cucumber.api.java.Before;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+
 
 public class LoginStepDefinition extends BrowserFactory {
     WebDriver driver;
