@@ -20,6 +20,6 @@ plugin = {
 )
 
 
-public class runner {
+public class Testrunner {
     
 }
